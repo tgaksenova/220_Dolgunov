@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="95131e29ec72476b873a782821f063b7" Name="Diagram1">
+        <EntityTypeShape EntityType="ElectrichkaModel.Categories" Width="1.5" PointX="3" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ElectrichkaModel.Directions" Width="1.5" PointX="0.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ElectrichkaModel.Regions" Width="1.5" PointX="0.75" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ElectrichkaModel.Roles" Width="1.5" PointX="5.75" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="ElectrichkaModel.Stations" Width="1.5" PointX="3" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ElectrichkaModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ElectrichkaModel.Tickets" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ElectrichkaModel.Users" Width="1.5" PointX="8" PointY="5.875" IsExpanded="true" />
+        <AssociationConnector Association="ElectrichkaModel.FK_Tickets_Categories" ManuallyRouted="false" />
+        <AssociationConnector Association="ElectrichkaModel.FK_Stations_Directions" ManuallyRouted="false" />
+        <AssociationConnector Association="ElectrichkaModel.FK_Tickets_Directions" ManuallyRouted="false" />
+        <AssociationConnector Association="ElectrichkaModel.FK_Stations_Regions" ManuallyRouted="false" />
+        <AssociationConnector Association="ElectrichkaModel.FK_Users_Roles" ManuallyRouted="false" />
+        <AssociationConnector Association="ElectrichkaModel.FK_Tickets_Stations" ManuallyRouted="false" />
+        <AssociationConnector Association="ElectrichkaModel.FK_Tickets_Stations1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

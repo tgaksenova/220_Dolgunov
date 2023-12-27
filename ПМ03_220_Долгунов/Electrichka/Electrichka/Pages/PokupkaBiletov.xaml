@@ -1,0 +1,46 @@
+﻿<Page x:Class="Electrichka.Pages.PokupkaBiletov"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Electrichka.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PokupkaBiletov">
+
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Text="Дата" Height="50" Width=" 150" Margin="0,0,0,50"/>
+        <TextBox Grid.Row="0" Grid.Column="0" Height="50" Width=" 150" x:Name="DateTickets"/>
+
+        <TextBlock Grid.Row="0" Grid.Column="1" Text="Время" Height="50" Width=" 150" Margin="0,0,0,50"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Height="50" Width=" 150" x:Name="TimeTickets"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="Станция выхода" Height="50" Width=" 150" Margin="0,0,0,50"/>
+        <ComboBox Grid.Row="1" Grid.Column="1" Height="50" Width=" 150" x:Name="StitionOutCB" SelectionChanged="StitionOutCB_SelectionChanged" />
+        
+        <TextBlock Grid.Row="1" Grid.Column="0" Text="Станция отправления" Height="50" Width=" 150" Margin="0,0,0,50"/>
+        <ComboBox Grid.Row="1" Grid.Column="0" Height="50" Width=" 150" x:Name="StanOtravCB" SelectionChanged="StanOtravCB_SelectionChanged"/>
+        
+        <TextBlock Grid.Row="0" Grid.Column="2" Text="напревление" Height="50" Width=" 150" Margin="0,0,0,50"/>
+        <ComboBox Grid.Row="0" Grid.Column="2" Height="50" Width=" 150" x:Name="NapravCB" SelectionChanged="NapravCB_SelectionChanged"  />
+
+        <TextBlock Grid.Row="0" Grid.Column="3" Text="класс" Height="50" Width=" 150" Margin="0,0,0,50"/>
+        <ComboBox Grid.Row="0" Grid.Column="3" Height="50" Width=" 150" x:Name="KlassCB" SelectionChanged="KlassCB_SelectionChanged"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="2" Text="цена" Height="50" Width=" 150" Margin="0,0,0,50"/>
+        <TextBox Grid.Row="1" Grid.Column="2" x:Name="CenaBileta" Height="50" Width="150" />
+
+        <Button Grid.Row="1" Grid.Column="3" Content="Купить" x:Name="BuyTickets" Click="BuyTickets_Click" />
+    </Grid>
+</Page>
